@@ -3,7 +3,6 @@
 {% load static %}
 <div class="container mt-5">
     <div class="row">
-        {% for about in about_list %}
         <div class="col-4 text-center">
             <img src="{% static 'images/nobody.jpg' %}" width="75%">
         </div>
@@ -19,7 +18,6 @@
             <!-- Updated on field goes in here -->
             <p class="text-end"><em>Updated on: </em>{{ about.updated_on }}</p>
         </div>
-    {% endfor %}
     </div>
 </div>
 {% endblock content %}
